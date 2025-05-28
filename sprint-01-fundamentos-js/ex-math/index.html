@@ -4,17 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercício Math</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .card-exercicio {
+        margin: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        max-width: 400px;
+        min-height: 40vh;
+        background-color: rgba(193, 215, 228, 0.841);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.426);
+        color: #000;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+    </style>
   </head>
   <body>
-    <h1>O seu número é: <span id="numero-titulo">0</span></h1>
-
-    <p id="raiz"></p>
-    <p id="inteiro"></p>
-    <p id="isNaN"></p>
-    <p id="arredondaBaixo"></p>
-    <p id="arredondaCima"></p>
-    <p id="duasDecimais"></p>
-
-    <script src="/minha-jornada-2025/sprint-01-fundamentos-js/ex-math/script.js"></script>
+    <div class="card-exercicio">
+      <h1>O seu número é: <span id="numero-titulo">0</span></h1>
+      <p id="raiz"></p>
+      <p id="inteiro"></p>
+      <p id="isNaN"></p>
+      <p id="arredondaBaixo"></p>
+      <p id="arredondaCima"></p>
+      <p id="duasDecimais"></p>
+      <script src="/minha-jornada-2025/sprint-01-fundamentos-js/ex-math/script.js"></script>
+    </div>
   </body>
 </html>

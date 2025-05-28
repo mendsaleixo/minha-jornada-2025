@@ -15,19 +15,29 @@ const duasDecimais = document.getElementById("duasDecimais");
 numeroTitulo.innerHTML = numero;
 
 // Exibe a raiz quadrada do número
-raiz.innerHTML = `<p>A raiz quadrada de ${numero} é ${numero ** 0.5}.</p>`;
+raiz.innerHTML = `<p>A raiz quadrada de <strong>${numero}</strong> é <strong>${
+  numero ** 0.5
+}</strong>.</p>`;
 
 // Verifica se o número é inteiro
-inteiro.innerHTML = `<p>${numero} é inteiro: ${Number.isInteger(numero)}.</p>`;
+inteiro.innerHTML = `<p><strong>${numero}</strong> é inteiro: <strong>${Number.isInteger(
+  numero
+)}</strong>.</p>`;
 
 // Verifica se o valor é NaN (Not a Number)
-isNaNResult.innerHTML = `<p>É NaN: ${isNaN(numero)}</p>`;
+isNaNResult.innerHTML = `<p>É NaN: <strong>${isNaN(numero)}</strong>;</p>`;
 
 // Arredonda o número para baixo
-arredondaBaixo.innerHTML = `<p>Arredondado para baixo: ${Math.floor(numero)}.</p>`;
+arredondaBaixo.innerHTML = `<p>Arredondado para baixo: <strong>${Math.floor(
+  numero
+)}</strong>.</p>`;
 
 // Arredonda o número para cima
-arredondaCima.innerHTML = `<p>Arredondado para cima: ${Math.ceil(numero)}.</p>`;
+arredondaCima.innerHTML = `<p>Arredondado para cima: <strong>${Math.ceil(
+  numero
+)}</strong>.</p>`;
 
 // Exibe o número com duas casas decimais
-duasDecimais.innerHTML = `<p>Com duas casas decimais: ${numero.toFixed(2)}</p>`;
+duasDecimais.innerHTML = `<p>Com duas casas decimais: <strong>${numero.toFixed(
+  2
+)}</strong></p>`;
