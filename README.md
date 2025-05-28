@@ -18,7 +18,7 @@ Este é o primeiro grande marco da jornada, focado em construir uma base sólida
 - **Status:** ⏳ A Fazer
 - **Meta:** Dominar os blocos de construção essenciais do JavaScript (variáveis, arrays, objetos, condicionais, funções).
 - **Conteúdo de Foco:** Aulas 28 a 44
-- **Projeto Entregue:** *Ainda não iniciado.*
+- **Projeto Entregue:** *Em andamento.*
 
 ### 📅 Sprint 2: Controle de Fluxo e Estruturas de Dados
 - **Status:** ⏳ A Fazer
