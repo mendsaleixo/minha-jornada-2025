@@ -2,24 +2,26 @@
 const calc = (peso, altura) => peso / (altura * altura);
 
 // Função que pega os valores, calcula e exibe o resultado
-function calcularIMC() {
-  const name = document.getElementById("name").value;
-  const lastname = document.getElementById("lastname").value;
-  const weight = Number(document.getElementById("weight").value);
-  const height = Number(document.getElementById("height").value);
+function calcularIMC(event) {
+  event.preventDefault(); // Impede o envio do form e o refresh da página (conteúdo mais avançado)
 
-  if (!name || !lastname || !weight || !height) {
+  const nome = document.getElementById("nome").value;
+  const sobrenome = document.getElementById("sobrenome").value;
+  const peso = Number(document.getElementById("peso").value);
+  const altura = Number(document.getElementById("altura").value);
+
+  if (!nome || !sobrenome || !peso || !altura) {
     alert("Por favor, preencha todos os campos.");
     return;
   }
 
-  const IMC = calc(weight, height);
-  const result = IMC.toFixed(2);
+  const IMC = calc(peso, altura);
+  const resultadoFinal = IMC.toFixed(2);
 
-  // Atualiza o conteúdo da <p id="result">
-  const resultElement = document.getElementById("result");
-  resultElement.textContent = `${name} ${lastname}, seu IMC é ${result}`;
+  // Atualiza o conteúdo do resultado
+  const resultElement = document.getElementById("resultado");
+  resultElement.innerHTML = `<p>${nome} ${sobrenome}, seu IMC é <strong>${resultadoFinal}</strong></p>`;
 }
 
-// Adiciona evento no botão
-document.getElementById("button").addEventListener("click", calcularIMC);
+// Adiciona evento no formulário
+document.getElementById("imcForm").addEventListener("submit", calcularIMC);
