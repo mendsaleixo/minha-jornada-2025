@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,16 +7,41 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="box-card">
-      <h1>Calculador de IMC</h1>
-      <input id="name" type="text" placeholder="Nome" />
-      <input id="lastname" type="text" placeholder="Sobrenome" />
-      <input id="weight" type="text" placeholder="Seu Peso (kg)" />
-      <input id="height" type="text" placeholder="Sua Altura (m)" />
-      <button id="button" type="button">Calcular IMC</button>
-      <div id="result-box">
-        <p>Resultado</p>
-        <p id="result">Seu IMC:</p>
+    <div class="container">
+      <h1>Calculadora de IMC</h1>
+      <form id="imcForm">
+        <div class="input-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" required />
+        </div>
+        <div class="input-group">
+          <label for="sobrenome">Sobrenome:</label>
+          <input type="text" id="sobrenome" required />
+        </div>
+        <div class="input-group">
+          <label for="peso">Peso (kg):</label>
+          <input
+            type="number"
+            id="peso"
+            step="0.1"
+            required
+            placeholder="Ex: 70.5"
+          />
+        </div>
+        <div class="input-group">
+          <label for="altura">Altura (m):</label>
+          <input
+            type="number"
+            id="altura"
+            step="0.01"
+            required
+            placeholder="Ex: 1.75"
+          />
+        </div>
+        <button type="submit">Calcular IMC</button>
+      </form>
+      <div id="resultado" class="resultado-container">
+        {/* O resultado do IMC aparecerá aqui */}
       </div>
     </div>
     <script src="/ex-imc/script.js"></script>
