@@ -15,7 +15,7 @@ Me apropriar dos principais conceitos e fundamentos da programação frontend, d
 Este é o primeiro grande marco da jornada, focado em construir uma base sólida em **JavaScript puro**, desde a lógica fundamental até a manipulação de elementos no DOM.
 
 ### 📅 Sprint 1: Fundamentos e Lógica Central
-- **Status:** ⏳ A Fazer
+- **Status:** ✅ Concluído
 - **Meta:** Dominar os blocos de construção essenciais do JavaScript (variáveis, arrays, objetos, condicionais, funções).
 - **Conteúdo de Foco:** Aulas 28 a 44
 - **Projeto Entregue:** [Calculadora de IMC com Interface](./sprint-01-fundamentos-js/projeto-imc)
