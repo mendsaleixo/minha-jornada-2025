@@ -1,4 +1,12 @@
-function saudacao(nome) {
-  console.log(`Bom dia, ${nome}!`);
+function falaOi() {
+  return "Oi!";
 }
-const variável = saudacao('mends');
+
+const chamaOi = false;
+
+console.log(chamaOi && falaOi())
+console.log(falaOi() && chamaOi)
+console.log(chamaOi || falaOi())
+console.log(falaOi() || chamaOi)
+
+console.log(chamaOi && NaN)
