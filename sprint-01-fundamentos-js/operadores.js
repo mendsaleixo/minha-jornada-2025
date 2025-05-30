@@ -59,9 +59,14 @@ function falaOi() {
 
 const chamaOi = false;
 
-console.log(chamaOi && falaOi())
-console.log(falaOi() && chamaOi)
-console.log(chamaOi || falaOi())
-console.log(falaOi() || chamaOi)
+console.log(chamaOi && falaOi());
+console.log(falaOi() && chamaOi);
+console.log(chamaOi || falaOi());
+console.log(falaOi() || chamaOi);
 
-console.log(chamaOi && NaN) //false
+console.log(chamaOi && NaN); //false
+
+/** OR mais utilizado */
+const corUsuario = undefined; //se uma cor for setada ela que irá aparecer no console.
+const corPadrao = corUsuario || "preto";
+console.log(corPadrao);
