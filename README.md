@@ -15,16 +15,18 @@ Me apropriar dos principais conceitos e fundamentos da programação frontend, d
 Este é o primeiro grande marco da jornada, focado em construir uma base sólida em **JavaScript puro**, desde a lógica fundamental até a manipulação de elementos no DOM.
 
 ### 📅 Sprint 1: Fundamentos e Lógica Central
-- **Status:** ⏳ A Fazer
+- **Status:** ✅ Concluído
 - **Meta:** Dominar os blocos de construção essenciais do JavaScript (variáveis, arrays, objetos, condicionais, funções).
 - **Conteúdo de Foco:** Aulas 28 a 44
-- **Projeto Entregue:** *Em andamento.*
+- **Projeto Entregue:** [Calculadora de IMC com Interface](./sprint-01-fundamentos-js/projeto-imc)
+- **Principais Aprendizados:** Estudo sobre os conceitos básicos de variáveis, arrays, objetos, condicionais e funções, também manipulação de DOM, html e css.
 
 ### 📅 Sprint 2: Controle de Fluxo e Estruturas de Dados
 - **Status:** ⏳ A Fazer
-- **Meta:** Aprender a controlar repetições (loops) e manipular dados de forma eficiente.
-- **Conteúdo de Foco:** Aulas 45 a 56
-- **Projeto Entregue:** *Ainda não iniciado.*
+- **Meta:** Aprender a controlar a repetição de ações (loops) e manipular dados de forma avançada.
+- **Aulas de Foco:** 45 a 62.
+- **Projeto Entregue:** [Gerador de Lista Dinâmica com Loops](./sprint-02-controle-de-fluxo/projeto-lista-dinamica)
+- **Principais Aprendizados:** *Descreva brevemente o que você mais absorveu: ex: "Domínio dos diferentes tipos de loops, uso de desestruturação para código mais limpo, e aplicação de lógica condicional em cenários práticos."*
 
 ### 📅 Sprint 3: Interatividade, Erros e Funções de Tempo
 - **Status:** ⏳ A Fazer
