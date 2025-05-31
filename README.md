@@ -22,7 +22,7 @@ Este é o primeiro grande marco da jornada, focado em construir uma base sólida
 - **Principais Aprendizados:** Estudo sobre os conceitos básicos de variáveis, arrays, objetos, condicionais e funções, também manipulação de DOM, html e css.
 
 ### 📅 Sprint 2: Controle de Fluxo e Estruturas de Dados
-- **Status:** ⏳ A Fazer
+- **Status:** ⏳ Em andamento
 - **Meta:** Aprender a controlar a repetição de ações (loops) e manipular dados de forma avançada.
 - **Aulas de Foco:** 45 a 62.
 - **Projeto Entregue:** [Gerador de Lista Dinâmica com Loops](./sprint-02-controle-de-fluxo/projeto-lista-dinamica)
