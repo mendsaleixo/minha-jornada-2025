@@ -50,6 +50,7 @@ const data = new Date();
 const dataBrasil = formataData(data);
 console.log(dataBrasil);
 
+// toLocaleDateString()
 // Projeto simples, sem dependências	Intl.DateTimeFormat
 // App moderno, SPA com React/Angular	Day.js
 // Projeto mais robusto ou Node backend	date-fns
