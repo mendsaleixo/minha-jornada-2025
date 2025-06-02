@@ -1,5 +1,3 @@
-
-
 // if (diaSemana === 0) {
 //   diaSemanaTexto = "Domingo";
 // } else if (diaSemana === 1) {
@@ -47,6 +45,7 @@
 // console.log(diaSemana, diaSemanaTexto);
 
 function getDiaSemanaTexto(diaSemana) {
+  let diaSemanaTexto;
   switch (diaSemana) {
     case 0:
       diaSemanaTexto = "Domingo";
