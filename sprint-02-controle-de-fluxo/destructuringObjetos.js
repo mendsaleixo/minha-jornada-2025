@@ -13,7 +13,7 @@ const { nome, sobrenome, idade, carro = "sandero" } = pessoa;
 
 console.log(nome, sobrenome, idade);
 console.log(pessoa);
-console.log(carro); //foi criada um const carros no mesmo momento d aatribuição.
+console.log(carro); //foi criada um const carros no mesmo momento da atribuição.
 
 const { name, ...resto } = pessoa; //Usando parâmento rest
 console.log(resto)
