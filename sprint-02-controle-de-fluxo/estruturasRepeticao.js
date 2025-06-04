@@ -1,0 +1,24 @@
+/**For Clássico */
+const frutas = ["pera", "maça", "uva"];
+
+// for (let i = 0; i < frutas.length; i++) {
+//   console.log(frutas[i]);
+// }
+
+/**For in*/
+for (let i in frutas) {
+  console.log(frutas[i]);
+}
+//for in lê indices ou chaves
+
+const pessoa = {
+  nome: "mends",
+  sobrenome: "aleixo",
+  idade: 43,
+};
+// for (let keys in pessoa) {
+//   console.log(keys)
+// }
+for (let chave in pessoa) {
+  console.log(chave, pessoa[chave]);
+}
