@@ -1,24 +1,29 @@
 /**For Clássico */
-const frutas = ["pera", "maça", "uva"];
+// const frutas = ["pera", "maça", "uva"];
 
 // for (let i = 0; i < frutas.length; i++) {
 //   console.log(frutas[i]);
 // }
 
 /**For in*/
-for (let i in frutas) {
-  console.log(frutas[i]);
-}
-//for in lê indices ou chaves
+// for (let i in frutas) {
+//   console.log(frutas[i]);
+// } //retorna indices ou chaves
 
-const pessoa = {
-  nome: "mends",
-  sobrenome: "aleixo",
-  idade: 43,
-};
+// const pessoa = {
+//   nome: "mends",
+//   sobrenome: "aleixo",
+//   idade: 43,
+// };
 // for (let keys in pessoa) {
 //   console.log(keys)
 // }
-for (let chave in pessoa) {
-  console.log(chave, pessoa[chave]);
-}
+// for (let chave in pessoa) {
+//   console.log(chave, pessoa[chave]);
+// }
+
+/**For of */
+const nome = "Mendelson Aleixo";
+for (let valor of nome) {
+  console.log(valor);
+} //retorna o valor
