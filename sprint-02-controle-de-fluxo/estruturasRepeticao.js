@@ -1,4 +1,5 @@
 /**For Clássico */
+//Geralmente utilizado com iteráveis
 // const frutas = ["pera", "maça", "uva"];
 
 // for (let i = 0; i < frutas.length; i++) {
@@ -6,6 +7,7 @@
 // }
 
 /**For in*/
+//Retorna o indice ou chaves (arrays ou objetos)
 // for (let i in frutas) {
 //   console.log(frutas[i]);
 // } //retorna indices ou chaves
@@ -23,6 +25,7 @@
 // }
 
 /**For of */
+//Retorna valores
 const nome = "Mendelson Aleixo";
 for (let valor of nome) {
   console.log(valor);
