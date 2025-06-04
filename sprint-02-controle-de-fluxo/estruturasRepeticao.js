@@ -41,25 +41,38 @@
 // }
 
 //número aleatório
-function random(min, max) {
-  const r = Math.random() * (max - min) + min;
-  return Math.floor(r); //arredonda pra baixo com o floor
+// function random(min, max) {
+//   const r = Math.random() * (max - min) + min;
+//   return Math.floor(r); //arredonda pra baixo com o floor
+// }
+
+// const min = 1;
+// const max = 50;
+// let rand = random(min, max);
+
+// while (rand !== 10) {
+//   rand = random(min, max);
+//   console.log(rand);
+// }
+
+// /**Do While */
+// //faça primeiro algo e depois verifique a condição
+// do {
+//   rand = random(min, max);
+//   console.log(rand);
+// } while (rand !== 10);
+
+/**Continue Break*/
+// Selecionar um trecho do laço;
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+for (let numero of numeros) {
+  if (numero % 2 == 0) {
+    continue; //permite continuar (pular pra próxima iteração) quando a condição for atendida.
+  }
+
+  if (numero === 7) {
+    console.log("Aqui para no 7.");
+    break;//para a execução da iteração
+  }
+  console.log(numero);
 }
-
-const min = 1;
-const max = 50;
-let rand = random(min, max);
-
-while (rand !== 10) {
-  rand = random(min, max);
-  console.log(rand);
-}
-
-/**Do While */
-//faça primeiro algo e depois verifique a condição
-do {
-  rand = random(min, max);
-  console.log(rand);
-} while (rand !== 10);
-
-/**Break Continue*/
