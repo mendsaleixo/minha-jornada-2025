@@ -33,24 +33,13 @@ console.log(ePaisagem(800, 1200)); // false
  Use na função números de 0 a 100
  */
 //número aleatório
-function random(min, max) {
-  const r = Math.random() * (max - min) + min;
-  return Math.floor(r);
+function fizzBuzz(numero) {
+  if (typeof numero !== "number") return numero;
+  if (numero % 3 === 0 && numero % 5 === 0) return "FizzBuzz";
+  if (numero % 3 === 0) return "Fizz";
+  if (numero % 5 === 0) return "Buzz";
+  return numero;
 }
-
-const min = 0;
-const max = 100;
-
-for (let i = 0; i < 10; i++) {
-  const numero = random(min, max);
-
-  if (numero % 3 === 0 && numero % 5 === 0) {
-    console.log(`FizzBuzz`);
-  } else if (numero % 3 === 0) {
-    console.log(`Fizz`);
-  } else if (numero % 5 === 0) {
-    console.log(`Buzz`);
-  } else {
-    console.log(numero);
-  }
+for (let i = 0; i <= 100; i++) {
+  console.log(i, fizzBuzz(i));
 }
