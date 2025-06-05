@@ -72,7 +72,7 @@ for (let numero of numeros) {
 
   if (numero === 7) {
     console.log("Aqui para no 7.");
-    break;//para a execução da iteração
+    break; //para a execução da iteração
   }
   console.log(numero);
 }
