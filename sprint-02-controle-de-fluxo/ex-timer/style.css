@@ -30,6 +30,7 @@ h1 {
 #timer {
   font-size: 60px;
   color: red;
+  margin-bottom: 10px;
 }
 
 button {
