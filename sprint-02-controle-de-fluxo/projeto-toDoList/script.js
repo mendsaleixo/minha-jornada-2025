@@ -50,6 +50,7 @@ document.addEventListener("click", function (e) {
   const el = e.target;
   if (el.classList.contains("apagar")) {
     el.parentElement.remove();
+    salvarTarefas();
   }
 });
 
@@ -62,5 +63,16 @@ function salvarTarefas() {
     tarefaTexto = tarefaTexto.replace("Apagar", "").trim(); //remover o texto apagar, trim remove espaço em branco.
     listaDeTarefas.push(tarefaTexto);
   }
-  console.log(listaDeTarefas);
+  const tarefasJSON = JSON.stringify(listaDeTarefas); //grava o array tarefas em um arquivo json de texto
+  localStorage.setItem("tarefa", tarefasJSON);
 }
+
+//Função para obter tarefas do local storage
+function adicionaTarefasSalvas() {
+  const tarefas = localStorage.getItem("tarefa");
+  const listaDeTarefas = JSON.parse(tarefas);
+  for (let tarefa of listaDeTarefas) {
+    criaTarefa(tarefa);
+  }
+}
+adicionaTarefasSalvas();
