@@ -25,7 +25,7 @@ Este é o primeiro grande marco da jornada, focado em construir uma base sólida
 - **Status:** ✅ Concluído
 - **Meta:** Aprender a controlar a repetição de ações (loops) e manipular dados de forma avançada.
 - **Aulas de Foco:** 45 a 62.
-- **Projeto Entregue:** [Gerador de Lista Dinâmica com Loops](./sprint-02-controle-de-fluxo/projeto-lista-dinamica)
+- **Projeto Entregue:** [Timer dinâmico](./sprint-02-controle-de-fluxo/ex-timer)
 - **Principais Aprendizados:** Domínio dos diferentes tipos de loops, uso de desestruturação para código mais limpo, e aplicação de lógica condicional em cenários práticos.
 
 ### 📅 Sprint 3: Interatividade, Erros e Funções de Tempo
