@@ -11,18 +11,19 @@ function criaLi() {
   return li;
 }
 
-//Função para enviar terefa com tecla enter
-//Escuta quando uma tecla é pressionada e joga essa ação na const inputTarefa
+//Função para enviar terefa com tecla enter. Ela escuta quando uma tecla é pressionada e joga essa ação na const inputTarefa
 inputTarefa.addEventListener("keypress", function (e) {
+  //função anônima que escuta evento na página (keypress) dentro do input. (e)evento
   if (e.keyCode === 13) {
+    //o evento "escuta" o numero da tecla sder pŕessionado.
     if (!inputTarefa.value) return; //Não há returno se o input estiver vazio
-    criaTarefa(inputTarefa.value);
+    criaTarefa(inputTarefa.value); //chama a função cria tarefa.
   }
-}); 
+});
 
 //Função para limpar input
 function limpaInput() {
-  inputTarefa.value = "";
+  inputTarefa.value = ""; //Deixa o input vazio
   inputTarefa.focus(); //manter o cursor no input
 }
 
