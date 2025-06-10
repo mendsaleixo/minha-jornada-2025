@@ -1,19 +1,24 @@
+// Pega o elemento HTML que tem a classe 'input-tarefa' e guarda na variável inputTarefa
 const inputTarefa = document.querySelector(".input-tarefa");
+// Pega o elemento HTML que tem a classe 'btn-tarefa' e guarda na variável btnTarefa
 const btnTarefa = document.querySelector(".btn-tarefa");
+// Pega o elemento HTML que tem a classe 'tarefas' e guarda na variável tarefas
 const tarefas = document.querySelector(".tarefas");
 
+//Cria função para inserir as tarefas como elementos html (li) dentro da lista (ul) do html. Retorna uma lista (li)
 function criaLi() {
   const li = document.createElement("li");
   return li;
 }
 
 //Função para enviar terefa com tecla enter
+//Escuta quando uma tecla é pressionada e joga essa ação na const inputTarefa
 inputTarefa.addEventListener("keypress", function (e) {
   if (e.keyCode === 13) {
     if (!inputTarefa.value) return; //Não há returno se o input estiver vazio
     criaTarefa(inputTarefa.value);
   }
-}); //Escuta quando uma tecla é pressionada.
+}); 
 
 //Função para limpar input
 function limpaInput() {
