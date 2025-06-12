@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Selecionar Elementos #02</title>
-    <link rel="stylesheet" href="css/estilo.css">
-</head>
-<body class="conteudo exercicio">
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body class="conteudo exercicio">
     <div id="primeiro">#primeiro</div>
     <div>Segundo</div>
     <div class="terceiro ultimo"><span wb-attrib>.terceiro .ultimo</span></div>
-    <script>              
-        // ...
+    <script>
+      /*Selecionando com QuerySelector*/
+      document.querySelector("#primeiro").classList.add("destaque"); //#id, pode ser .class
+      const selecionar = (seletor) =>
+        document
+          .querySelectorAll(seletor)
+          .forEach((e) => e.classList.add("destaque")); //seleciona mais de um elemento com a função selecionar
+      const deselecionar = (seletor) =>
+        document
+          .querySelectorAll(seletor)
+          .forEach((e) => e.classList.remove("destaque")); //querySelectorAll - Retorna NodeList (tem forEach) !== getElementsbyTagName que retorna htmlcolection (não tem função forEach)
+      selecionar("div"); //chama função
+
+      deselecionar("*"); //seletor universal
+      selecionar(".terceiro.ultimo");
+
+      deselecionar("*");
+      selecionar(":not(#primeiro)"); //pseudoclasse - negação em um seletor
+
+      deselecionar("*");
+      //selecionar pegando o primeiro elemento filho de algum elemento
+      selecionar(":nth-child(1)"); //pegou primeiro filho do body e o primeiro da div, que foi um span.
+      deselecionar("*");
+      selecionar("div:nth-of-type(1)"); // pega primeiro elemento tipo div
+
+      deselecionar("*");
+      selecionar("[wb-attrib]"); //seleciona por atributo.
     </script>
-</body>
+  </body>
 </html>

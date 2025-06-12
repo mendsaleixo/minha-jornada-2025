@@ -31,7 +31,13 @@
         <button>Pesquisar</button>
     </form>
     <script>
-        // ...
+        /*Selecionando forms por posição e por names*/
+        console.log(document.forms)//selecionando forms, traz array com os formulários
+        console.log(document.forms[0])//usando notação de array no html collection
+        console.log(document.getElementsByName("pesquisa"))//traz um nodelist
+
+        document.pesquisa.q.value = "Linux"//pega o valor da pesquisa acessando pelo name de cada elemento. 
+
     </script>
 </body>
 
