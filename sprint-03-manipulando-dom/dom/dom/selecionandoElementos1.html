@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Selecionar Elementos #01</title>
-    <link rel="stylesheet" href="css/estilo.css">
-</head>
-<body class="conteudo exercicio">
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body class="conteudo exercicio">
     <div id="primeiro">#primeiro</div>
     <div>Segundo</div>
     <div class="terceiro ultimo">.terceiro .ultimo</div>
-    <script>              
-        // ...
+    <script>
+    /*getElementById*/
+      document.getElementById("primeiro").classList.add("destaque"); //pega o id
+      
+    /*getElementByTagName*/
+      const divs = document.getElementsByTagName("div"); //pega uma lista de elementos div
+      Array.from(divs).forEach((e) => e.classList.remove("destaque")); //cria um array com as divs, percorre e remove a classe destaque.
+      const divsArray = [...divs];
+      divsArray.forEach((e) => e.classList.add("destaque"));//adiciona a classe destaque em todos. 
+
+      /*getElementByClassName*/
+      const ultimosElementos = document.getElementsByClassName("ultimo")
+      for (let e of ultimosElementos) {
+        e.classList.remove("destaque")
+      }
+
+      //classList.add e classList.remove -remove ou adiciona classes
     </script>
-</body>
+  </body>
 </html>
