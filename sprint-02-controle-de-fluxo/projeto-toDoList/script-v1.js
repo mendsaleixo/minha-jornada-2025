@@ -30,11 +30,11 @@ function limpaInput() {
 //Função que cria botão apagar junto com a tarefa
 function criaBotaoApagar(li) {
   li.innerText += " "; //Espaço entre botão e tarefa
-  const botaoApagar = document.createElement("button");
-  botaoApagar.innerText = "Apagar";
+  const botaoApagar = document.createElement("button");//cria um elemento button
+  botaoApagar.innerText = "Apagar";//cria o texto apagar no elemento button
   botaoApagar.setAttribute("class", "apagar"); //cria classe no botão, com o nome apagar
-  botaoApagar.setAttribute("title", "Apagar essa tarefa"); //cria esse title quando ocorrer um hover
-  li.appendChild(botaoApagar); //cria botão com o texto "Apagar"
+  botaoApagar.setAttribute("title", "Apagar essa tarefa"); //cria o title "Apagar essa tarefa" quando ocorrer um hover 
+  li.appendChild(botaoApagar); //recebe o parâmetro li, aplica o appendChild inserindo a const botão apagar
 }
 
 function criaTarefa(textoInput) {
