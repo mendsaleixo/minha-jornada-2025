@@ -23,16 +23,17 @@ Este é o primeiro grande marco da jornada, focado em construir uma base sólida
 
 ### 📅 Sprint 2: Controle de Fluxo e Estruturas de Dados
 - **Status:** ✅ Concluído
-- **Meta:** Aprender a controlar a repetição de ações (loops) e manipular dados de forma avançada.
-- **Aulas de Foco:** 45 a 62.
+- **Meta:** Aprender a controlar a repetição de ações (loops) e manipular dados de forma avançada. Lidar com eventos de tempo, tratar erros e entender laços `while`.
+- **Aulas de Foco:** 45 a 66.
 - **Projeto Entregue:** [Timer dinâmico](./sprint-02-controle-de-fluxo/ex-timer)
-- **Principais Aprendizados:** Domínio dos diferentes tipos de loops, uso de desestruturação para código mais limpo, e aplicação de lógica condicional em cenários práticos.
+- **Principais Aprendizados:** Domínio dos diferentes tipos de loops, uso de desestruturação para código mais limpo, e aplicação de lógica condicional em cenários práticos. Pratica com try, catch e throw.
 
 ### 📅 Sprint 3: Interatividade, Erros e Funções de Tempo
-- **Status:** ✅ Concluído
-- **Meta:** Lidar com eventos de tempo, tratar erros e entender laços `while`.
-- **Conteúdo de Foco:** Aulas 57 a 66
-- **Projeto Entregue:** Pratica com try, catch e throw.
+- **Status:** ⏳ Em andamento
+- **Meta:** Aprender a "conversar" com a página web usando JavaScript — selecionar elementos, ler/modificar atributos e conteúdo, reagir a interações do usuário e construir uma aplicação interativa.  
+- **Conteúdo de Foco:** Aulas 278 a 299
+-  **Principais Aprendizados:** Aplicar a manipulação de DOM, eventos e lógica de interação.  
+- **Projeto Entregue:** Desenvolvimento incremental do **projeto Flappy Bird**, aplicando a manipulação de DOM, eventos e lógica de interação.  
 
 ### 📅 Sprint 4: Desafio Prático - To-Do List (DOM)
 - **Status:** ⏳ Em andamento
