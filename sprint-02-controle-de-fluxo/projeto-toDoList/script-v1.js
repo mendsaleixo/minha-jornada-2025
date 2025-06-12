@@ -1,40 +1,33 @@
-// Pega o elemento HTML que tem a classe 'input-tarefa' e guarda na variável inputTarefa
 const inputTarefa = document.querySelector(".input-tarefa");
-// Pega o elemento HTML que tem a classe 'btn-tarefa' e guarda na variável btnTarefa
 const btnTarefa = document.querySelector(".btn-tarefa");
-// Pega o elemento HTML que tem a classe 'tarefas' e guarda na variável tarefas
 const tarefas = document.querySelector(".tarefas");
 
-//Cria função para inserir as tarefas como elementos html (li) dentro da lista (ul) do html. Retorna uma lista (li)
 function criaLi() {
   const li = document.createElement("li");
   return li;
 }
 
-//Função para enviar terefa com tecla enter. Ela escuta quando uma tecla é pressionada e joga essa ação na const inputTarefa
 inputTarefa.addEventListener("keypress", function (e) {
-  //função anônima que escuta evento na página (keypress) dentro do input. (e)evento
   if (e.keyCode === 13) {
-    //o evento "escuta" o numero da tecla sder pŕessionado.
-    if (!inputTarefa.value) return; //Não há returno se o input estiver vazio
-    criaTarefa(inputTarefa.value); //chama a função cria tarefa.
+    if (!inputTarefa.value) return;
+    criaTarefa(inputTarefa.value);
   }
 });
 
 //Função para limpar input
 function limpaInput() {
-  inputTarefa.value = ""; //Deixa o input vazio
-  inputTarefa.focus(); //manter o cursor no input
+  inputTarefa.value = "";
+  inputTarefa.focus();
 }
 
 //Função que cria botão apagar junto com a tarefa
 function criaBotaoApagar(li) {
   li.innerText += " "; //Espaço entre botão e tarefa
-  const botaoApagar = document.createElement("button");//cria um elemento button
-  botaoApagar.innerText = "Apagar";//cria o texto apagar no elemento button
-  botaoApagar.setAttribute("class", "apagar"); //cria classe no botão, com o nome apagar
-  botaoApagar.setAttribute("title", "Apagar essa tarefa"); //cria o title "Apagar essa tarefa" quando ocorrer um hover 
-  li.appendChild(botaoApagar); //recebe o parâmetro li, aplica o appendChild inserindo a const botão apagar
+  const botaoApagar = document.createElement("button");
+  botaoApagar.innerText = "Apagar";
+  botaoApagar.setAttribute("class", "apagar");
+  botaoApagar.setAttribute("title", "Apagar essa tarefa");
+  li.appendChild(botaoApagar);
 }
 
 function criaTarefa(textoInput) {
@@ -47,7 +40,7 @@ function criaTarefa(textoInput) {
 }
 
 btnTarefa.addEventListener("click", function (e) {
-  if (!inputTarefa.value) return; //Não há returno se o input estiver vazio
+  if (!inputTarefa.value) return; 
   criaTarefa(inputTarefa.value);
 });
 
