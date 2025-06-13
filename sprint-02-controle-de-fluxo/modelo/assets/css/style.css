@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/*Variável em CSS*/
+:root {
+  /*Inicia com -- */
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box; /*Respeita o limite dos elementos  */
+  outline: 0; /*Zera a linha em torno dos elementos*/
+}
+
+body {
+  margin: 0; /*resetar body*/
+  padding: 0; /*resetar body*/
+  background: var(--primary-color); /*chamando variável*/
+  font-family: "Open sans", sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em; /*Espaço entre as linhas*/
+}
+
+/*Centralizar o container*/
+.container {
+  max-width: 640px; /*limitas a largura*/
+  margin: 50px auto; /*Centralização horizontal (topo e baixo | laterais*/
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/*Centralizar esses elementos*/
+form input,
+form label,
+form button {
+  display: block; /*Coloca os elementos em bloco (abaixo um do outro)*/
+  width: 100%; /*Ocupa toda a largura do elemento pai*/
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+/*Estiliza a linha quando o input for selecionado*/
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer; /*maozinha no cursor*/
+  margin-top: 30px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+form button:active {
+  background: red;
+} /*muda o background quando clicado*/
