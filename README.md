@@ -28,18 +28,40 @@ Este é o primeiro grande marco da jornada, focado em construir uma base sólida
 - **Projeto Entregue:** [Timer dinâmico](./sprint-02-controle-de-fluxo/ex-timer)
 - **Principais Aprendizados:** Domínio dos diferentes tipos de loops, uso de desestruturação para código mais limpo, e aplicação de lógica condicional em cenários práticos. Pratica com try, catch e throw.
 
-### 📅 Sprint 3: Interatividade, Erros e Funções de Tempo
-- **Status:** ⏳ Em andamento
-- **Meta:** Aprender a "conversar" com a página web usando JavaScript — selecionar elementos, ler/modificar atributos e conteúdo, reagir a interações do usuário e construir uma aplicação interativa.  
-- **Conteúdo de Foco:** Aulas 278 a 299
--  **Principais Aprendizados:** Aplicar a manipulação de DOM, eventos e lógica de interação.  
-- **Projeto Entregue:** Desenvolvimento incremental do **projeto Flappy Bird**, aplicando a manipulação de DOM, eventos e lógica de interação.  
+📅 **Sprint 3: O DOM em Movimento**
 
-### 📅 Sprint 4: Desafio Prático - To-Do List (DOM)
-- **Status:** ⏳ Em andamento
-- **Meta:** Integrar os conhecimentos para desenvolver uma aplicação web interativa.
-- **Conteúdo de Foco:** Aula 67
-- **Projeto Entregue:** *Ainda não iniciado.*
+* **Status:** ✅ Concluído
+* **Meta:** Aprender a "conversar" com a página web usando JavaScript, culminando na construção de um jogo interativo.
+* **Aulas de Foco:** 278 a 299.
+* **Projeto Entregue:** [Jogo Flappy Bird](./sprint-03-manipulacao-dom/projeto-flappy-bird)
+* **Principais Aprendizados:** *Uso de `createElement` e `appendChild` para gerar conteúdo dinâmico, manipulação de CSS via JavaScript para criar animações, e a lógica de um game loop com `setInterval` e `event listeners`.*
+
+---
+
+## 🚀 Épico 2: JavaScript Profissional (Além do DOM)
+
+*Fase de aprofundamento nos pilares do JavaScript moderno, focando em padrões de código, programação funcional e orientação a objetos.*
+
+📅 **Sprint 4: Funções em Profundidade**
+
+* **Status:** ⏳ Em andamento
+* **Meta:** Entender o comportamento avançado de funções (escopo, closures, `this`) e os padrões de criação de objetos com Factory e Constructor Functions.
+* **Aulas de Foco:** 68 a 80.
+* **Projeto Entregue:** [Calculadora com Função Construtora](./sprint-04-funcoes-avancadas) (a ser desenvolvido).
+
+📅 **Sprint 5: A Mágica dos Arrays Funcionais**
+
+* **Status:** ⏳ A Fazer
+* **Meta:** Dominar a manipulação de dados de forma declarativa e poderosa com os métodos `map`, `filter` e `reduce`.
+* **Aulas de Foco:** 82 a 88.
+* **Projeto Entregue:** *Ainda não iniciado.*
+
+📅 **Sprint 6: Orientação a Objetos com Prototypes**
+
+* **Status:** ⏳ A Fazer
+* **Meta:** Mergulhar no sistema de protótipos do JavaScript, entendendo herança e polimorfismo, para construir um validador de CPF.
+* **Aulas de Foco:** 90 a 101.
+* **Projeto Entregue:** *Ainda não iniciado.*
 
 ---
 
