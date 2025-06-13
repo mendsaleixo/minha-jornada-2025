@@ -38,7 +38,7 @@ Este é o primeiro grande marco da jornada, focado em construir uma base sólida
 
 ---
 
-## 🚀 Épico 2: JavaScript Profissional (Além do DOM)
+## 🚀 Épico 2: JavaScript Avançado
 
 *Fase de aprofundamento nos pilares do JavaScript moderno, focando em padrões de código, programação funcional e orientação a objetos.*
 
