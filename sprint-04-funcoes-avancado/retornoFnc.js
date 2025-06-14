@@ -29,7 +29,7 @@
 
 function criaMultiplicador(multiplicador) {
   return function (n) {
-    return n * multiplicador;
+    return n * multiplicador;//lembra do parâmetro que está acima
   };
 }
 
