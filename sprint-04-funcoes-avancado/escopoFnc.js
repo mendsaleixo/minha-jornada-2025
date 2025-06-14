@@ -9,6 +9,6 @@ function falaOi() {
 //Com função
 function usaFalaOi() {
   const nome = "Aleixo";
-  falaOi();//A função vai procurar onde ela foi declarada, e depois seus vizinhos acima. Não usa o "Aleixo"
+  falaOi(); //A função vai procurar onde ela foi declarada, e depois seus vizinhos acima. Não usa o "Aleixo"
 }
 usaFalaOi();
