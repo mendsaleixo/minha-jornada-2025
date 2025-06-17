@@ -1,7 +1,11 @@
 // IIFE - Immediately invoked function expression
 //Criada para não sair para o escopo global
 
-(function () {
+(function (
+  idade,
+  peso,
+  altura //pode receber parâmetros
+) {
   const sobreNome = "Aleixo";
   function criaNome(nome) {
     return nome + " " + sobreNome;
@@ -10,6 +14,7 @@
     console.log(criaNome("Mends"));
   }
   falaNome();
-})();
+  console.log(idade, peso, altura);
+})(43, 76, 1.67); //argumentos
 
-const nome = "Aleixo";
+const nome = "Outro nome";
