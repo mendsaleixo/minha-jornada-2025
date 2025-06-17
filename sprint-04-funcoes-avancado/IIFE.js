@@ -2,8 +2,14 @@
 //Criada para não sair para o escopo global
 
 (function () {
-  const nome = "Mends";
-  console.log(`Olá, ${nome}`);
+  const sobreNome = "Aleixo";
+  function criaNome(nome) {
+    return nome + " " + sobreNome;
+  }
+  function falaNome() {
+    console.log(criaNome("Mends"));
+  }
+  falaNome();
 })();
 
 const nome = "Aleixo";
