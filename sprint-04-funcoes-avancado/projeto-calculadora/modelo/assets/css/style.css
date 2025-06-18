@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/*Variável em CSS*/
+:root {
+  /*Inicia com -- */
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box; /*Respeita o limite dos elementos  */
+  outline: 0; /*Zera a linha em torno dos elementos*/
+}
+
+body {
+  margin: 0; /*resetar body*/
+  padding: 0; /*resetar body*/
+  background: var(--primary-color); /*chamando variável*/
+  font-family: "Open sans", sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em; /*Espaço entre as linhas*/
+}
+
+/*Centralizar o container*/
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 640px; /*limitas a largura*/
+  margin: 50px auto; /*Centralização horizontal (topo e baixo | laterais*/
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.calculador {
+  width: 400px;
+}
+
+.display {
+  font-size: 2em;
+  width: 100%;
+  text-align: right;
+}
+
+.btn {
+  width: 100%;
+  height: 50px;
+  font-size: 1em;
+  border: none;
+  background: #dfdfdf;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #9e9e9e;
+}
