@@ -25,7 +25,7 @@ console.log(idades);
 
 //Adicionar ids no objeto pessoas:
 const comIds = pessoas.map((valor, indice) => {
-  const newObj = { ...valor }; //necessário criar um novo para não alterar o original
+  const newObj = { ...valor }; //necessário criar um novo objeto para não alterar o original.
   newObj.id = indice + 1;
   return newObj;
 });
