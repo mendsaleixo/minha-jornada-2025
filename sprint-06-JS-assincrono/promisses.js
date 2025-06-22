@@ -79,29 +79,45 @@ function esperaAi(msg, tempo) {
 }
 
 //Promise.all, Promisse.race, Promise.resolve, Promise.reject
-const promises = [
-  "Primeiro valor (sem promise)",
-  esperaAi("Promise 1", 3000),
-  esperaAi("Promise 2", 500),
-  esperaAi("Promise 3", 1000),
-  //esperaAi("2000", 1000),
-  "Outro valor sem promise",
-];
+// const promises = [
+//   "Primeiro valor (sem promise)",
+//   esperaAi("Promise 1", 3000),
+//   esperaAi("Promise 2", 500),
+//   esperaAi("Promise 3", 1000),
+//   //esperaAi("2000", 1000),
+//   "Outro valor sem promise",
+// ];
 
 //Vai trazer todas as promises na ordem
-Promise.all(promises)
-  .then(function (valor) {
-    console.log(valor);
-  })
-  .catch(function (erro) {
-    console.log(erro);
-  });
+// Promise.all(promises)
+//   .then(function (valor) {
+//     console.log(valor);
+//   })
+//   .catch(function (erro) {
+//     console.log(erro);
+//   });
 
 //Entrega o primeiro valor que resolver (principalmente sem promise)
-Promise.race(promises)
-  .then(function (valor) {
-    console.log(valor);
-  })
-  .catch(function (erro) {
-    console.log(erro);
-  });
+// Promise.race(promises)
+//   .then(function (valor) {
+//     console.log(valor);
+//   })
+//   .catch(function (erro) {
+//     console.log(erro);
+//   });
+
+//Promise.resolve
+function baixaPagina() {
+  const emCache = true;
+
+  if (emCache) {
+    return Promise.resolve("Página em cache."); //se o dado existir, já entrega uma promise resolvida.
+    //return Promise.reject("Página em cache."); manda pro catch direto
+  } else {
+    return esperaAi("Baixei a página", 3000);
+  }
+}
+
+baixaPagina()
+  .then((dadosPagina) => console.log(dadosPagina))
+  .catch((e) => console.log(e));
