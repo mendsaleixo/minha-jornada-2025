@@ -1,3 +1,9 @@
+//Promisses
+/*
+Uma promisse é um objeto retornado ao qual você anexa retornos de chamada, em vez de passar retornos de chamada para uma função.
+Ou seja, ao invés de passar uma função de callback para outra função e esperar ela te chamar de volta, a função te devolve um objeto Promise, e você anexa os callbacks depois, usando .then(), .catch(), ou .finally(). 
+*/
+
 function rand(min, max) {
   min *= 1000;
   max *= 1000;
